@@ -27,8 +27,14 @@
             letter-spacing: 1px;
         }
 
-        .table-container {
+        .tables-wrapper {
+            display: flex;
+            gap: 20px;
             width: 100%;
+        }
+
+        .table-container {
+            flex: 1;
             /* max-width removed for full width */
             /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
             border-radius: 8px;
@@ -53,12 +59,13 @@
             padding: 15px;
             text-align: left;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             border: none;
         }
 
         td {
             padding: 12px 15px;
+            font-size: 1.1rem;
             border-bottom: 1px solid #eeeeee;
         }
 
@@ -75,7 +82,14 @@
         }
 
         /* Responsive adjustments */
+        @media (max-width: 900px) {
+            .tables-wrapper {
+                flex-direction: column;
+            }
+        }
+
         @media (max-width: 600px) {
+
             body {
                 padding: 20px;
                 /* Smaller padding on mobile */
@@ -98,43 +112,336 @@
 
     <h1>План выпекания до 12:00</h1>
 
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Программа</th>
-                    <th>Номенклатура</th>
-                    <th>Кол-во</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Утренняя выпечка</td>
-                    <td>Круассан с маслом</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Утренняя выпечка</td>
-                    <td>Даниш с вишней</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>Хлеб основной</td>
-                    <td>Багет французский</td>
-                    <td>40</td>
-                </tr>
-                <tr>
-                    <td>Хлеб основной</td>
-                    <td>Чиабата</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Сдоба</td>
-                    <td>Ватрушка с творогом</td>
-                    <td>35</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="tables-wrapper">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Программа</th>
+                        <th>Номенклатура</th>
+                        <th>Кол-во</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Программа</th>
+                        <th>Номенклатура</th>
+                        <th>Кол-во</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Программа</th>
+                        <th>Номенклатура</th>
+                        <th>Кол-во</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Сдоба</td>
+                        <td>Ватрушка с творогом</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Круассан с маслом</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Утренняя выпечка</td>
+                        <td>Даниш с вишней</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Багет французский</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Хлеб основной</td>
+                        <td>Чиабата</td>
+                        <td>25</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
     </div>
 
 </body>
